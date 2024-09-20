@@ -1,0 +1,23 @@
+.hover {
+  transition: var(--transition-property) var(--transition-duration-micro-medium)
+    var(--transition-timing-function);
+
+  &:hover {
+    transform: translateX(var(--static-space-4));
+  }
+}
+
+.html ::selection {
+  background-color: green;
+  color: white;
+}
+
+@media (--s) {
+  .textAlign {
+    text-align: center;
+  }
+
+  .blockAlign {
+    align-self: center;
+  }
+}
