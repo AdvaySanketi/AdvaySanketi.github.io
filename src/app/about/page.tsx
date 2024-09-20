@@ -221,6 +221,7 @@ const about = {
     institutions: [
       {
         name: "PES University",
+        label: "PES University",
         description: (
           <>
             <p>Bachelor of Technology - BTech, Computer Science</p>
@@ -231,6 +232,7 @@ const about = {
       },
       {
         name: "Kendriya Vidyalaya",
+        label: "Kendriya Vidyalaya",
         description: (
           <>
             <p>11th and 12th Computer Science</p>
@@ -241,6 +243,7 @@ const about = {
       },
       {
         name: "Air Force Golden Jubilee Institute",
+        label: "AFGJI",
         description: (
           <>
             <p>10th</p>
@@ -377,7 +380,7 @@ const structure = [
   },
   {
     title: about.education.title,
-    items: about.education.institutions.map((institution) => institution.name),
+    items: about.education.institutions.map((institution) => institution.label),
   },
   {
     title: about.technical.title,
@@ -437,8 +440,8 @@ export default function About() {
             Karnataka, India
           </Flex>
 
-          <Flex wrap gap="8" paddingLeft="64">
-            {["English", "Hindi", "Kannada", "German"].map((language) => (
+          <Flex wrap gap="8" paddingLeft="16">
+            {["English", "Hindi", "Kannada"].map((language) => (
               <Tag size="l">{language}</Tag>
             ))}
           </Flex>
@@ -628,7 +631,7 @@ export default function About() {
                   gap="4"
                   direction="column"
                 >
-                  <Text id={institution.name} variant="heading-strong-l">
+                  <Text id={institution.label} variant="heading-strong-l">
                     {institution.name}
                   </Text>
                   <Text
