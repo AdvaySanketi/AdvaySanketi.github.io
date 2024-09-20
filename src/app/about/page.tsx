@@ -55,7 +55,25 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/project-2.1.jpg",
+            src: "/images/work/twospoon_website.png",
+            alt: "Twospoon.ai",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/work/social_dashboard.png",
+            alt: "Twospoon.ai",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/work/kerosene_website.png",
+            alt: "Twospoon.ai",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/work/kerosene_app.png",
             alt: "Twospoon.ai",
             width: 16,
             height: 9,
@@ -63,46 +81,117 @@ const about = {
         ],
       },
       {
-        company: "Kannada Koota PESU",
-        timeframe: "Aug 2023 - Present",
-        role: "IT Head",
+        company: "College Clubs",
+        timeframe: "2023 - Present",
+        role: "Domain Head",
         achievements: [
           <>
-            Developed and launched the official Kannada Koota PESU website,
-            providing a digital platform to showcase events and activities,
-            enhancing community engagement.
+            <h3>Technical and Projects Head</h3>
+            <Text
+              variant="heading-default-m"
+              onBackground="brand-weak"
+              marginBottom="m"
+            >
+              Equinox ECC
+            </Text>
+            <p>
+              <Text variant="heading-default-xs" onBackground="neutral-weak">
+                May 2024 - Present
+              </Text>
+            </p>
+            <br />
+            <ul>
+              <li>
+                Spearheaded the development of innovative tech projects for
+                Equinox ECC, enhancing the organization's digital presence and
+                project management.
+              </li>
+              <li>
+                Led cross-functional teams in delivering large-scale engineering
+                solutions, improving project execution efficiency by 30%.
+              </li>
+              <li>
+                Integrated modern technologies to automate processes, reducing
+                manual work by 25% and increasing team productivity.
+              </li>
+            </ul>
           </>,
           <>
-            Established a design system to unify branding across web and social
-            platforms, improving design consistency by 40%.
+            <h3>IT Head</h3>
+            <Text
+              variant="heading-default-m"
+              onBackground="brand-weak"
+              marginBottom="m"
+            >
+              Kannada Koota PESU
+            </Text>
+            <p>
+              <Text variant="heading-default-xs" onBackground="neutral-weak">
+                Aug 2023 - Present
+              </Text>
+            </p>
+            <br />
+            <ul>
+              <li>
+                Developed and launched the official Kannada Koota PESU website,
+                providing a digital platform to showcase events and activities,
+                enhancing community engagement.
+              </li>
+              <li>
+                Established a design system to unify branding across web and
+                social platforms, improving design consistency by 40%.
+              </li>
+              <li>
+                Implemented new IT workflows that streamlined operations,
+                resulting in a 20% reduction in manual tasks.
+              </li>
+            </ul>
           </>,
           <>
-            Implemented new IT workflows that streamlined operations, resulting
-            in a 20% reduction in manual tasks.
+            <h3>Competitive Programming Head</h3>
+            <Text
+              variant="heading-default-m"
+              onBackground="brand-weak"
+              marginBottom="m"
+            >
+              Codechef PESU
+            </Text>
+            <p>
+              <Text variant="heading-default-xs" onBackground="neutral-weak">
+                Aug 2023 - Present
+              </Text>
+            </p>
+            <br />
+            <ul>
+              <li>
+                Organized and managed coding competitions and hackathons that
+                saw a 25% increase in participation.
+              </li>
+              <li>
+                Collaborated with peers to introduce new problem-solving
+                sessions, enhancing problem-solving skills across the club.
+              </li>
+            </ul>
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/work/kk_website.png",
+            alt: "Kannada Koota Website",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/work/kk_website_2.png",
+            alt: "Kannada Koota Website",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
 
       {
-        company: "Codechef PESU",
-        timeframe: "Aug 2023 - Present",
-        role: "Competitive Programming Head",
-        achievements: [
-          <>
-            Organized and managed coding competitions and hackathons that saw a
-            25% increase in participation.
-          </>,
-          <>
-            Collaborated with peers to introduce new problem-solving sessions,
-            enhancing problem-solving skills across the club.
-          </>,
-        ],
-        images: [],
-      },
-
-      {
-        company: "Youtube",
+        company: "WellBeing.Sanketis",
         timeframe: "Dec 2020 - Present",
         role: "Self-Employed Youtuber",
         achievements: [
@@ -112,11 +201,18 @@ const about = {
             Traditional and Nutritional Recipes, Yoga Videos etc.
           </>,
           <>
-            Achieved 1.2k+ Subscribers, 5,00,000+ views and 7000+ Watch Hours
+            Achieved 1.3k+ Subscribers, 5,00,000+ views and 10000+ Watch Hours
           </>,
           <>Over 600 published Videos and Shorts</>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/work/youtube.png",
+            alt: "WellBeing.Sanketis",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
@@ -335,7 +431,7 @@ export default function About() {
           direction="column"
           alignItems="center"
         >
-          <Avatar src="/images/avatar.jpg" size="xl" />
+          <Avatar src="/images/avatar3.jpg" size="xl" />
           <Flex gap="8" alignItems="center">
             <Icon onBackground="accent-weak" name="globe" />
             Karnataka, India
@@ -483,7 +579,13 @@ export default function About() {
                     ))}
                   </Flex>
                   {experience.images.length > 0 && (
-                    <Flex fillWidth paddingTop="m" paddingLeft="40" wrap>
+                    <Flex
+                      fillWidth
+                      paddingTop="m"
+                      paddingLeft="40"
+                      wrap
+                      gap="xs"
+                    >
                       {experience.images.map((image, index) => (
                         <Flex
                           key={index}

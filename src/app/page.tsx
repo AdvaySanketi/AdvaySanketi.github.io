@@ -114,7 +114,7 @@ export default function Home() {
               <Flex gap="8" alignItems="center">
                 <Avatar
                   style={{ marginLeft: "-0.75rem", marginRight: "0.25rem" }}
-                  src="/images/avatar.jpg"
+                  src="/images/avatar3.jpg"
                   size="m"
                 />
                 About me
