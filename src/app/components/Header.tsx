@@ -62,7 +62,7 @@ export const Header = () => {
         alignItems="center"
         textVariant="body-default-m"
       >
-        <Avatar src="/favicon.ico" size="l" />
+        <Avatar src="/images/avatar3.png" size="l" />
       </Flex>
       <Flex
         background="surface"

@@ -42,8 +42,8 @@ export function generateMetadata({ params }: WorkParams) {
     team,
   } = post.metadata;
   let ogImage = image
-    ? `https://advaysanketi.github.io${image}`
-    : `https://advaysanketi.github.io/og?title=${title}`;
+    ? `https://advay-sanketi-portfolio.vercel.app${image}`
+    : `https://advay-sanketi-portfolio.vercel.app/og?title=${title}`;
 
   return {
     title,
@@ -55,7 +55,7 @@ export function generateMetadata({ params }: WorkParams) {
       description,
       type: "article",
       publishedTime,
-      url: `https://advaysanketi.github.io/projects/${post.slug}`,
+      url: `https://advay-sanketi-portfolio.vercel.app/projects/${post.slug}`,
       images: [
         {
           url: ogImage,
@@ -106,9 +106,9 @@ export default function Project({ params }: WorkParams) {
             dateModified: post.metadata.publishedAt,
             description: post.metadata.summary,
             image: post.metadata.image
-              ? `https://advaysanketi.github.io${post.metadata.image}`
-              : `https://advaysanketi.github.io/og?title=${post.metadata.title}`,
-            url: `https://advaysanketi.github.io/projects/${post.slug}`,
+              ? `https://advay-sanketi-portfolio.vercel.app${post.metadata.image}`
+              : `https://advay-sanketi-portfolio.vercel.app/og?title=${post.metadata.title}`,
+            url: `https://advay-sanketi-portfolio.vercel.app/projects/${post.slug}`,
             author: {
               "@type": "Person",
               name: "Advay Sanketi",

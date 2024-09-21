@@ -9,16 +9,18 @@ import { Footer, Header } from "@/app/components";
 import { Inter } from "next/font/google";
 import { Source_Code_Pro } from "next/font/google";
 
+import DynamicAccentUpdater from "@/app/components/dynamicUpdater";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://advaysanketi.github.io"),
+  metadataBase: new URL("https://advay-sanketi-portfolio.vercel.app"),
   title: "Advay Sanketi - That's Me",
   description: "Portfolio website showcasing my work as a Full-Stack Developer",
   openGraph: {
     title: `Advay Sanketi's Portfolio`,
     description: "Portfolio website showcasing my work.",
-    url: "advaysanketi.github.io",
+    url: "advay-sanketi-portfolio.vercel.app",
     siteName: `Advay Sanketi's Portfolio`,
     locale: "en_IN",
     type: "website",
@@ -81,6 +83,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         code.variable
       )}
     >
+      <DynamicAccentUpdater />
       <Flex
         style={{ minHeight: "100vh" }}
         as="body"

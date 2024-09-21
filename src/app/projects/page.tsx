@@ -5,7 +5,7 @@ import { Projects } from "@/app/projects/components/Projects";
 export function generateMetadata() {
   const title = "Advay Sanketi - That's Me";
   const description = "Projects by Advay Sanketi";
-  const ogImage = `https://advaysanketi.github.io/og?title=${encodeURIComponent(
+  const ogImage = `https://advay-sanketi-portfolio.vercel.app/og?title=${encodeURIComponent(
     title
   )}`;
 
@@ -16,7 +16,7 @@ export function generateMetadata() {
       title,
       description,
       type: "website",
-      url: `https://advaysanketi.github.io/projects`,
+      url: `https://advay-sanketi-portfolio.vercel.app/projects`,
       images: [
         {
           url: ogImage,
@@ -47,8 +47,8 @@ export default function Work() {
             "@type": "CollectionPage",
             headline: "My projects",
             description: "Projects by Advay Sanketi",
-            url: `https://advaysanketi.github.io/projects`,
-            image: `advaysanketi.github.io/og?title=My%20Projects`,
+            url: `https://advay-sanketi-portfolio.vercel.app/projects`,
+            image: `advay-sanketi-portfolio.vercel.app/og?title=My%20Projects`,
             author: {
               "@type": "Person",
               name: "Advay Sanketi",
@@ -57,8 +57,8 @@ export default function Work() {
               "@type": "CreativeWork",
               headline: project.metadata.title,
               description: project.metadata.summary,
-              url: `https://advaysanketi.github.io/projects/${project.slug}`,
-              image: `advaysanketi.github.io/${project.metadata.image}`,
+              url: `https://advay-sanketi-portfolio.vercel.app/projects/${project.slug}`,
+              image: `advay-sanketi-portfolio.vercel.app/${project.metadata.image}`,
             })),
           }),
         }}

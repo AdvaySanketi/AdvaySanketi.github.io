@@ -341,7 +341,7 @@ const about = {
 export function generateMetadata() {
   const title = "Advay Sanketi - That's Me";
   const description = "Hi I'm Advay Sanketi, a Full-Stack Developer";
-  const ogImage = `https://advaysanketi.github.io/og?title=${encodeURIComponent(
+  const ogImage = `https://advay-sanketi-portfolio.vercel.app/og?title=${encodeURIComponent(
     title
   )}`;
 
@@ -352,7 +352,7 @@ export function generateMetadata() {
       title,
       description,
       type: "website",
-      url: `https://advaysanketi.github.io/blog`,
+      url: `https://advay-sanketi-portfolio.vercel.app/blog`,
       images: [
         {
           url: ogImage,
@@ -402,8 +402,8 @@ export default function About() {
             jobTitle: "Full Stack Development",
             description:
               "Hello, I am Advay Sanketi, Developer at heart, with a passion for technology and a curiosity without bounds. I'm skilled at finding creative and innovative solutions to complex problems, and I'm good at working effectively with cross-functional teams. I'm also an excellent communicator and a good mentor. I can accept constructive criticism and work on it to improve myself. I like to stay up-to-date with all the latest technologies and am highly reliable.",
-            url: `https://advaysanketi.github.io/about`,
-            image: `advaysanketi.github.io/images/avatar.jpg`,
+            url: `https://advay-sanketi-portfolio.vercel.app/about`,
+            image: `advay-sanketi-portfolio.vercel.app/images/avatar.jpg`,
             sameAs: social
               .filter((item) => item.link && !item.link.startsWith("mailto:")) // Filter out empty links and email links
               .map((item) => item.link),
@@ -434,7 +434,7 @@ export default function About() {
           direction="column"
           alignItems="center"
         >
-          <Avatar src="/images/avatar3.jpg" size="xl" />
+          <Avatar src="/images/avatar.jpg" size="xl" />
           <Flex gap="8" alignItems="center">
             <Icon onBackground="accent-weak" name="globe" />
             Karnataka, India

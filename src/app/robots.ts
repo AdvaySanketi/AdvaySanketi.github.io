@@ -6,7 +6,7 @@ export default function robots() {
         allow: "/",
       },
     ],
-    sitemap: `https://advaysanketi.github.io/sitemap.xml`,
-    host: "https://advaysanketi.github.io",
+    sitemap: `https://advay-sanketi-portfolio.vercel.app/sitemap.xml`,
+    host: "https://advay-sanketi-portfolio.vercel.app",
   };
 }

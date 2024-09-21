@@ -14,7 +14,7 @@ export function generateMetadata() {
   const title = "Advay Sanketi - That's Me";
   const description =
     "Portfolio website showcasing my work as a Full-Stack Developer";
-  const ogImage = `https://advaysanketi.github.io/og?title=${encodeURIComponent(
+  const ogImage = `https://advay-sanketi-portfolio.vercel.app/og?title=${encodeURIComponent(
     title
   )}`;
 
@@ -25,7 +25,7 @@ export function generateMetadata() {
       title,
       description,
       type: "website",
-      url: `https://advaysanketi.github.io`,
+      url: `https://advay-sanketi-portfolio.vercel.app`,
       images: [
         {
           url: ogImage,
@@ -61,8 +61,8 @@ export default function Home() {
             name: "Advay Sanketi - That's Me",
             description:
               "Portfolio website showcasing my work as a Full-Stack Developer",
-            url: `https://advaysanketi.github.io`,
-            image: `advaysanketi.github.io/og?title=${encodeURIComponent(
+            url: `https://advay-sanketi-portfolio.vercel.app`,
+            image: `advay-sanketi-portfolio.vercel.app/og?title=${encodeURIComponent(
               "Advay Sanketi - That's Me"
             )}`,
             publisher: {
@@ -70,7 +70,7 @@ export default function Home() {
               name: "Advay Sanketi",
               image: {
                 "@type": "ImageObject",
-                url: `advaysanketi.github.io/images/avatar.jpg`,
+                url: `advay-sanketi-portfolio.vercel.app/images/avatar.jpg`,
               },
             },
           }),
@@ -114,7 +114,7 @@ export default function Home() {
               <Flex gap="8" alignItems="center">
                 <Avatar
                   style={{ marginLeft: "-0.75rem", marginRight: "0.25rem" }}
-                  src="/images/avatar3.jpg"
+                  src="/images/avatar.jpg"
                   size="m"
                 />
                 About me

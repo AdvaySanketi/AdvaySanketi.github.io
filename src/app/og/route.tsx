@@ -51,7 +51,9 @@ export async function GET(request: Request) {
             }}
           >
             <img
-              src={"https://advaysanketi.github.io/images/avatar.jpg"}
+              src={
+                "https://advay-sanketi-portfolio.vercel.app/images/avatar.jpg"
+              }
               style={{
                 width: "12rem",
                 height: "12rem",
