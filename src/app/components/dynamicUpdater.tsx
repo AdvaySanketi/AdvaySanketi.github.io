@@ -4,6 +4,11 @@ import { useEffect, useState } from "react";
 import styles from "./DynamicAccentUpdater.module.scss";
 
 const accentColors = [
+  "moss",
+  "green",
+  "emerald",
+  "aqua",
+  "cyan",
   "blue",
   "indigo",
   "violet",
@@ -12,11 +17,6 @@ const accentColors = [
   "red",
   "orange",
   "yellow",
-  "moss",
-  "green",
-  "emerald",
-  "aqua",
-  "cyan",
 ];
 
 const DynamicAccentUpdater: React.FC = () => {

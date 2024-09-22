@@ -87,7 +87,7 @@ export async function GET(request: Request) {
                   opacity: "0.6",
                 }}
               >
-                "Full-Stack Developer"
+                Full-Stack Developer
               </span>
             </div>
           </div>
