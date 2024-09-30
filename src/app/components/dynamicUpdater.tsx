@@ -19,6 +19,10 @@ const accentColors = [
   "yellow",
 ];
 
+const isMobile = () => {
+  return /Mobi|Android/i.test(navigator.userAgent);
+};
+
 const DynamicAccentUpdater: React.FC = () => {
   const [accentIndex, setAccentIndex] = useState(0);
   const [lastX, setLastX] = useState(0);
@@ -26,9 +30,14 @@ const DynamicAccentUpdater: React.FC = () => {
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
   const [colorChangeCooldown, setColorChangeCooldown] = useState(false);
+  const [isMobileDevice, setIsMobileDevice] = useState(false);
 
   useEffect(() => {
+    setIsMobileDevice(isMobile());
+
     const handleMouseMove = (event: MouseEvent) => {
+      if (isMobileDevice) return;
+
       const deltaX = Math.abs(event.clientX - lastX);
       const deltaY = Math.abs(event.clientY - lastY);
 
@@ -61,7 +70,11 @@ const DynamicAccentUpdater: React.FC = () => {
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, [accentIndex, lastX, lastY, colorChangeCooldown]);
+  }, [accentIndex, lastX, lastY, colorChangeCooldown, isMobileDevice]);
+
+  if (isMobileDevice) {
+    return null;
+  }
 
   return (
     <div
