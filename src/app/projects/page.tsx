@@ -34,7 +34,7 @@ export function generateMetadata() {
 }
 
 export default function Work() {
-  let allProjects = getPosts(["src", "app", "projects"]);
+  let allProjects = getPosts(["src", "app", "projects", "projects"]);
 
   return (
     <Flex fillWidth maxWidth="m" direction="column">
