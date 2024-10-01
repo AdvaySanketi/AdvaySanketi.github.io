@@ -1,7 +1,7 @@
 import { getPosts } from "@/app/utils";
 
 export default async function sitemap() {
-  let projects = getPosts(["src", "app", "projects", "projects"]).map(
+  let projects = getPosts(["src", "app", "projects", "project-files"]).map(
     (post) => ({
       url: `https://advay-sanketi-portfolio.vercel.app/projects/${post.slug}`,
       lastModified: post.metadata.publishedAt,

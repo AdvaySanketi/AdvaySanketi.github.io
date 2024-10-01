@@ -17,7 +17,7 @@ interface WorkParams {
 }
 
 export async function generateStaticParams() {
-  let posts = getPosts(["src", "app", "projects", "projects"]);
+  let posts = getPosts(["src", "app", "projects", "project-files"]);
 
   return posts.map((post) => ({
     slug: post.slug,
@@ -25,7 +25,7 @@ export async function generateStaticParams() {
 }
 
 export function generateMetadata({ params }: WorkParams) {
-  let post = getPosts(["src", "app", "projects", "projects"]).find(
+  let post = getPosts(["src", "app", "projects", "project-files"]).find(
     (post) => post.slug === params.slug
   );
 
@@ -72,7 +72,7 @@ export function generateMetadata({ params }: WorkParams) {
 }
 
 export default function Project({ params }: WorkParams) {
-  let post = getPosts(["src", "app", "projects", "projects"]).find(
+  let post = getPosts(["src", "app", "projects", "project-files"]).find(
     (post) => post.slug === params.slug
   );
 
